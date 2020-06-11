@@ -1,6 +1,7 @@
 // Import Animations
-@import './animations/animations';
+@import './animation/index';
 
+// Base Styles
 body {
     margin: 0;
 }
@@ -15,85 +16,4 @@ body {
         width: 100%;
         height: 105vh;
     }
-}
-.background__slider {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-
-    & img {
-        width: 100%;
-        margin: -10px 0;
-        animation: backgroundMove .2s infinite linear;
-    }
-}
-
-#mouth,
-#hair,
-#neck,
-#left-eye,
-#right-eye,
-#left-eyebrow,
-#right-eyebrow,
-#left-eyeskin,
-#right-eyeskin {
-    transform-box: fill-box;
-    transform-origin: 0;
-}
-
-#left-arm,
-#right-arm,
-#pants,
-#left-feet,
-#right-feet,
-#tie {
-    transform-box: fill-box;
-    transform-origin: left;
-}
-
-#mouth {
-    animation: mouthMove 1s infinite linear;
-}
-
-#hair,
-#neck {
-    animation: hairMove .8s infinite linear;
-}
-
-#right-eyebrow,
-#left-eyebrow {
-    animation: eyebrowMove .8s infinite linear;
-}
-
-#left-eyeskin,
-#right-eyeskin {
-    animation: eyeskinMove .8s infinite linear;
-}
-
-#right-eye,
-#left-eye {
-    animation: eyeMove .8s infinite linear;
-}
-
-#pants,
-#left-sneaker,
-#right-sneaker,
-#left-leg,
-#right-leg,
-#left-rope,
-#right-rope,
-#left-arm,
-#right-arm,
-#shirt,
-#undershirt,
-#under-shirt2 {
-    animation: bodyMove .8s infinite linear;
-}
-
-#tie {
-    animation: tieMove .8s infinite linear;
 }

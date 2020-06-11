@@ -1,0 +1,51 @@
+// Body Styles
+#right-arm {
+    transform-box: fill-box;
+    transform-origin: left;
+}
+
+#left-arm {
+    animation: leftArmMove .8s infinite linear;
+}
+
+#right-arm {
+    animation: rightArmMove .8s infinite linear;
+}
+
+#pants,
+#left-sneaker,
+#right-sneaker,
+#left-leg,
+#right-leg,
+#left-rope,
+#right-rope,
+#shirt,
+#undershirt,
+#under-shirt2 {
+    animation: bodyMove .8s infinite linear;
+}
+
+// Body Keyframes
+@keyframes bodyMove {
+    0% { transform: translateX(0px) translateY(0px); }
+    25% { transform: translateX(-3px) translateY(4px); }
+    50% { transform: translateX(-6px) translateY(8px); }
+    75% { transform: translateX(-3px) translateY(4px); }
+    100% { transform: translateX(0px) translateY(0px); }
+}
+
+@keyframes rightArmMove {
+    0% { transform: rotateZ(0deg) translateY(0px) translateX(0px); }
+    25% { transform: rotateZ(15deg) translateY(10px) translateX(25px); }
+    50% { transform: rotateZ(30deg) translateY(20px) translateX(50px); }
+    75% { transform: rotateZ(15deg) translateY(10px) translateX(25px); }
+    100% { transform: rotateZ(0deg) translateY(0px) translateX(0px); }
+}
+
+@keyframes leftArmMove {
+    0% { transform: rotateZ(0deg) translateY(0px) translateX(0px); }
+    25% { transform: rotateZ(15deg) translateY(-10px) translateX(-25px); }
+    50% { transform: rotateZ(30deg) translateY(-20px) translateX(-50px); }
+    75% { transform: rotateZ(15deg) translateY(-10px) translateX(-25px); }
+    100% { transform: rotateZ(0deg) translateY(0px) translateX(0px); }
+}

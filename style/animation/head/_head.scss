@@ -1,0 +1,42 @@
+// Head Styles
+#hair {
+    animation: hairMove .8s infinite linear;
+}
+
+#neck,
+#collar {
+    animation: neckMove .8s infinite linear;
+    transform-box: fill-box;
+    transform-origin: 0;
+}
+
+#tie {
+    animation: tieMove .8s infinite linear;
+    transform-box: fill-box;
+    transform-origin: left;
+}
+
+// Head Keyframes
+@keyframes hairMove {
+    0% { transform: translateY(0px) skew(0deg, 0deg); }
+    25% { transform: rotateZ(-1deg) translateY(2px) skew(10deg, -10deg); }
+    50% { transform: rotateZ(-2deg) translateY(4px) skew(-10deg, 3deg); }
+    75% { transform: rotateZ(-1deg) translateY(2px) skew(-10deg, -10deg); }
+    100% { transform: rotateZ(0deg) translateY(0px) skew(0deg, 0deg); }
+}
+
+@keyframes tieMove {
+    0% { transform: skew(0deg, 0deg) translateX(0px) translateY(0px); }
+    25% { transform: skew(4deg, 4deg) translateX(2px) translateY(3px); }
+    50% { transform: skew(8deg, 8deg) translateX(3.8px) translateY(5px); }
+    75% { transform: skew(4deg, 4deg) translateX(2px) translateY(3px); }
+    100% { transform: skew(0deg, 0deg) translateX(0px) translateY(0px); }
+}
+
+@keyframes neckMove {
+    0% { transform: translateY(0px); }
+    25% { transform: translateY(3px); }
+    50% { transform: translateY(6px); }
+    75% { transform: translateY(3px); }
+    100% { transform: translateY(0px); }
+}

@@ -1,32 +1,37 @@
-@keyframes backgroundMove {
-    from { transform: translateY(0); }
-    to { transform: translateY(-100%);}
+// Face Styles
+#mouth,
+#hair,
+#left-eye,
+#right-eye,
+#left-eyebrow,
+#right-eyebrow,
+#left-eyeskin,
+#left-arm,
+#right-eyeskin {
+    transform-box: fill-box;
+    transform-origin: 0;
 }
 
-@keyframes hairMove {
-    0% { transform: translateY(0px); }
-    25% { transform: rotateZ(-1deg) translateY(2px); }
-    50% { transform: rotateZ(-2deg) translateY(4px); }
-    75% { transform: rotateZ(-1deg) translateY(2px); }
-    100% { transform: rotateZ(0deg) translateY(0px); }
+#right-eyebrow,
+#left-eyebrow {
+    animation: eyebrowMove .8s infinite linear;
 }
 
-@keyframes tieMove {
-    0% { transform: skew(0deg, 0deg) translateX(0px); }
-    25% { transform: skew(4deg, 4deg) translateX(2px); }
-    50% { transform: skew(8deg, 8deg) translateX(3.8px); }
-    75% { transform: skew(4deg, 4deg) translateX(2px); }
-    100% { transform: skew(0deg, 0deg) translateX(0px); }
+#left-eyeskin,
+#right-eyeskin {
+    animation: eyeskinMove .8s infinite linear;
 }
 
-@keyframes bodyMove {
-    0% { transform: translateX(0px) translateY(0px); }
-    25% { transform: translateX(-3px) translateY(4px); }
-    50% { transform: translateX(-6px) translateY(8px); }
-    75% { transform: translateX(-3px) translateY(4px); }
-    100% { transform: translateX(0px) translateY(0px); }
+#right-eye,
+#left-eye {
+    animation: eyeMove .8s infinite linear;
 }
 
+#mouth {
+    animation: mouthMove 1s infinite linear;
+}
+
+// Face Keyframes
 @keyframes eyeMove {
     0% { transform: scale3d(1, 1, 1); }
     25% { transform: scale3d(1.3, 1.3, 1.3); }
