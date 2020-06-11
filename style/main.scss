@@ -28,7 +28,7 @@ body {
     & img {
         width: 100%;
         margin: -10px 0;
-        animation: backgroundMove .4s infinite linear;
+        animation: backgroundMove .2s infinite linear;
     }
 }
 
@@ -50,7 +50,7 @@ body {
 #pants,
 #left-feet,
 #right-feet,
-#gravata {
+#tie {
     transform-box: fill-box;
     transform-origin: left;
 }
@@ -79,19 +79,21 @@ body {
     animation: eyeMove .8s infinite linear;
 }
 
-#left-arm {
-    animation: leftArmMove .8s infinite linear;
-}
-
-#right-arm {
-    animation: rightArmMove .8s infinite linear;
-}
 #pants,
-#left-feet,
-#right-feet {
-    animation: pantsMove .8s infinite linear;
+#left-sneaker,
+#right-sneaker,
+#left-leg,
+#right-leg,
+#left-rope,
+#right-rope,
+#left-arm,
+#right-arm,
+#shirt,
+#undershirt,
+#under-shirt2 {
+    animation: bodyMove .8s infinite linear;
 }
 
-#gravata {
-    animation: gravataMove .8s infinite linear;
+#tie {
+    animation: tieMove .8s infinite linear;
 }
