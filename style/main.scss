@@ -1,0 +1,97 @@
+// Import Animations
+@import './animations/animations';
+
+body {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+
+    & svg {
+        position: absolute;
+        left: 0;
+        top: -5%;
+        width: 100%;
+        height: 105vh;
+    }
+}
+.background__slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+
+    & img {
+        width: 100%;
+        margin: -10px 0;
+        animation: backgroundMove .4s infinite linear;
+    }
+}
+
+#mouth,
+#hair,
+#neck,
+#left-eye,
+#right-eye,
+#left-eyebrow,
+#right-eyebrow,
+#left-eyeskin,
+#right-eyeskin {
+    transform-box: fill-box;
+    transform-origin: 0;
+}
+
+#left-arm,
+#right-arm,
+#pants,
+#left-feet,
+#right-feet,
+#gravata {
+    transform-box: fill-box;
+    transform-origin: left;
+}
+
+#mouth {
+    animation: mouthMove 1s infinite linear;
+}
+
+#hair,
+#neck {
+    animation: hairMove .8s infinite linear;
+}
+
+#right-eyebrow,
+#left-eyebrow {
+    animation: eyebrowMove .8s infinite linear;
+}
+
+#left-eyeskin,
+#right-eyeskin {
+    animation: eyeskinMove .8s infinite linear;
+}
+
+#right-eye,
+#left-eye {
+    animation: eyeMove .8s infinite linear;
+}
+
+#left-arm {
+    animation: leftArmMove .8s infinite linear;
+}
+
+#right-arm {
+    animation: rightArmMove .8s infinite linear;
+}
+#pants,
+#left-feet,
+#right-feet {
+    animation: pantsMove .8s infinite linear;
+}
+
+#gravata {
+    animation: gravataMove .8s infinite linear;
+}
